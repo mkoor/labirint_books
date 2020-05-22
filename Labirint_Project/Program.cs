@@ -6,8 +6,15 @@ using System.Windows.Forms;
 
 namespace Labirint_Project
 {
+    public struct User
+    {
+        public string login;
+        public string password;
+    }
+
     static class Program
     {
+        public static LabirintEntities lab = new LabirintEntities();
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>

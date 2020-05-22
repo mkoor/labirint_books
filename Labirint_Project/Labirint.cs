@@ -16,5 +16,17 @@ namespace Labirint_Project
         {
             InitializeComponent();
         }
+
+        private void Labirint_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormAuthorization formAutho = new FormAuthorization();
+            formAutho.Show();
+            this.Hide();
+        }
     }
 }
