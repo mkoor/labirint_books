@@ -13,10 +13,10 @@ namespace Labirint_Project
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class LabirintEntities : DbContext
+    public partial class LabirintEntities1 : DbContext
     {
-        public LabirintEntities()
-            : base("name=LabirintEntities")
+        public LabirintEntities1()
+            : base("name=LabirintEntities1")
         {
         }
     

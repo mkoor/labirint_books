@@ -10,9 +10,8 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Name" Type="nvarchar(max)" />
-          <Property Name="Author" Type="nvarchar(max)" />
-          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Author" Type="nvarchar(max)" Nullable="false" />
           <Property Name="StockBalance" Type="nvarchar(max)" />
           <Property Name="Price" Type="int" Nullable="false" />
         </EntityType>
@@ -26,17 +25,15 @@
           <Property Name="Phone" Type="nvarchar(max)" />
           <Property Name="Email" Type="nvarchar(max)" />
           <Property Name="Address" Type="nvarchar(max)" />
+          <Property Name="IdBooks" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="OrdersSet">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="IdClient" Type="int" Nullable="false" />
-          <Property Name="IdBook" Type="int" Nullable="false" />
-          <Property Name="Date" Type="nvarchar(max)" />
-          <Property Name="FinalPrice" Type="int" />
           <Property Name="OrderStatus" Type="nvarchar(max)" />
+          <Property Name="IdClients" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Users">
           <Key>
@@ -46,15 +43,15 @@
           <Property Name="Login" Type="nvarchar(max)" Nullable="false" />
           <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
         </EntityType>
-        <Association Name="FK_OrdersSet_BooksSet">
+        <Association Name="FK_ClientsSet_BooksSet">
           <End Role="BooksSet" Type="Self.BooksSet" Multiplicity="1" />
-          <End Role="OrdersSet" Type="Self.OrdersSet" Multiplicity="*" />
+          <End Role="ClientsSet" Type="Self.ClientsSet" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="BooksSet">
               <PropertyRef Name="Id" />
             </Principal>
-            <Dependent Role="OrdersSet">
-              <PropertyRef Name="IdBook" />
+            <Dependent Role="ClientsSet">
+              <PropertyRef Name="IdBooks" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -66,7 +63,7 @@
               <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="OrdersSet">
-              <PropertyRef Name="IdClient" />
+              <PropertyRef Name="IdClients" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -75,9 +72,9 @@
           <EntitySet Name="ClientsSet" EntityType="Self.ClientsSet" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="OrdersSet" EntityType="Self.OrdersSet" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK_OrdersSet_BooksSet" Association="Self.FK_OrdersSet_BooksSet">
+          <AssociationSet Name="FK_ClientsSet_BooksSet" Association="Self.FK_ClientsSet_BooksSet">
             <End Role="BooksSet" EntitySet="BooksSet" />
-            <End Role="OrdersSet" EntitySet="OrdersSet" />
+            <End Role="ClientsSet" EntitySet="ClientsSet" />
           </AssociationSet>
           <AssociationSet Name="FK_OrdersSet_ClientsSet" Association="Self.FK_OrdersSet_ClientsSet">
             <End Role="ClientsSet" EntitySet="ClientsSet" />
@@ -94,12 +91,11 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="Author" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Author" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="StockBalance" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Price" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="OrdersSet" Relationship="Self.FK_OrdersSet_BooksSet" FromRole="BooksSet" ToRole="OrdersSet" />
+          <NavigationProperty Name="ClientsSet" Relationship="Self.FK_ClientsSet_BooksSet" FromRole="BooksSet" ToRole="ClientsSet" />
         </EntityType>
         <EntityType Name="ClientsSet">
           <Key>
@@ -111,6 +107,8 @@
           <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IdBooks" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="BooksSet" Relationship="Self.FK_ClientsSet_BooksSet" FromRole="ClientsSet" ToRole="BooksSet" />
           <NavigationProperty Name="OrdersSet" Relationship="Self.FK_OrdersSet_ClientsSet" FromRole="ClientsSet" ToRole="OrdersSet" />
         </EntityType>
         <EntityType Name="OrdersSet">
@@ -118,12 +116,8 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="IdClient" Type="Int32" Nullable="false" />
-          <Property Name="IdBook" Type="Int32" Nullable="false" />
-          <Property Name="Date" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="FinalPrice" Type="Int32" />
           <Property Name="OrderStatus" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="BooksSet" Relationship="Self.FK_OrdersSet_BooksSet" FromRole="OrdersSet" ToRole="BooksSet" />
+          <Property Name="IdClients" Type="Int32" Nullable="false" />
           <NavigationProperty Name="ClientsSet" Relationship="Self.FK_OrdersSet_ClientsSet" FromRole="OrdersSet" ToRole="ClientsSet" />
         </EntityType>
         <EntityType Name="Users">
@@ -134,15 +128,15 @@
           <Property Name="Login" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
         </EntityType>
-        <Association Name="FK_OrdersSet_BooksSet">
+        <Association Name="FK_ClientsSet_BooksSet">
           <End Role="BooksSet" Type="Self.BooksSet" Multiplicity="1" />
-          <End Role="OrdersSet" Type="Self.OrdersSet" Multiplicity="*" />
+          <End Role="ClientsSet" Type="Self.ClientsSet" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="BooksSet">
               <PropertyRef Name="Id" />
             </Principal>
-            <Dependent Role="OrdersSet">
-              <PropertyRef Name="IdBook" />
+            <Dependent Role="ClientsSet">
+              <PropertyRef Name="IdBooks" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -154,18 +148,18 @@
               <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="OrdersSet">
-              <PropertyRef Name="IdClient" />
+              <PropertyRef Name="IdClients" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="LabirintEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="LabirintEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="BooksSet" EntityType="Self.BooksSet" />
           <EntitySet Name="ClientsSet" EntityType="Self.ClientsSet" />
           <EntitySet Name="OrdersSet" EntityType="Self.OrdersSet" />
           <EntitySet Name="Users" EntityType="Self.Users" />
-          <AssociationSet Name="FK_OrdersSet_BooksSet" Association="Self.FK_OrdersSet_BooksSet">
+          <AssociationSet Name="FK_ClientsSet_BooksSet" Association="Self.FK_ClientsSet_BooksSet">
             <End Role="BooksSet" EntitySet="BooksSet" />
-            <End Role="OrdersSet" EntitySet="OrdersSet" />
+            <End Role="ClientsSet" EntitySet="ClientsSet" />
           </AssociationSet>
           <AssociationSet Name="FK_OrdersSet_ClientsSet" Association="Self.FK_OrdersSet_ClientsSet">
             <End Role="ClientsSet" EntitySet="ClientsSet" />
@@ -177,14 +171,13 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище LabirintModelContainer" CdmEntityContainer="LabirintEntities">
+        <EntityContainerMapping StorageEntityContainer="Хранилище LabirintModelContainer" CdmEntityContainer="LabirintEntities1">
           <EntitySetMapping Name="BooksSet">
             <EntityTypeMapping TypeName="LabirintModel.BooksSet">
               <MappingFragment StoreEntitySet="BooksSet">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Author" ColumnName="Author" />
-                <ScalarProperty Name="Description" ColumnName="Description" />
                 <ScalarProperty Name="StockBalance" ColumnName="StockBalance" />
                 <ScalarProperty Name="Price" ColumnName="Price" />
               </MappingFragment>
@@ -199,6 +192,7 @@
                 <ScalarProperty Name="Phone" ColumnName="Phone" />
                 <ScalarProperty Name="Email" ColumnName="Email" />
                 <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="IdBooks" ColumnName="IdBooks" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -206,11 +200,8 @@
             <EntityTypeMapping TypeName="LabirintModel.OrdersSet">
               <MappingFragment StoreEntitySet="OrdersSet">
                 <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="IdClient" ColumnName="IdClient" />
-                <ScalarProperty Name="IdBook" ColumnName="IdBook" />
-                <ScalarProperty Name="Date" ColumnName="Date" />
-                <ScalarProperty Name="FinalPrice" ColumnName="FinalPrice" />
                 <ScalarProperty Name="OrderStatus" ColumnName="OrderStatus" />
+                <ScalarProperty Name="IdClients" ColumnName="IdClients" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

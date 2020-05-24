@@ -56,5 +56,12 @@ namespace Labirint_Project
                 }
             }
         }
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+            Labirint labirint = new Labirint();
+            labirint.Show();
+            this.Hide();
+        }
     }
 }

@@ -56,10 +56,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BooksSet.cs">
-      <DependentUpon>ModelLab.tt</DependentUpon>
+      <DependentUpon>ModelLabirint.tt</DependentUpon>
     </Compile>
     <Compile Include="ClientsSet.cs">
-      <DependentUpon>ModelLab.tt</DependentUpon>
+      <DependentUpon>ModelLabirint.tt</DependentUpon>
     </Compile>
     <Compile Include="FormAdmin.cs">
       <SubType>Form</SubType>
@@ -67,11 +67,65 @@
     <Compile Include="FormAdmin.Designer.cs">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAnime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAnime.Designer.cs">
+      <DependentUpon>FormAnime.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAuthorization.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormAuthorization.Designer.cs">
       <DependentUpon>FormAuthorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBook.Designer.cs">
+      <DependentUpon>FormBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCategories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCategories.Designer.cs">
+      <DependentUpon>FormCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClient.Designer.cs">
+      <DependentUpon>FormClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDetectiv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDetectiv.Designer.cs">
+      <DependentUpon>FormDetectiv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKoko.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKoko.Designer.cs">
+      <DependentUpon>FormKoko.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOrderBy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrderBy.Designer.cs">
+      <DependentUpon>FormOrderBy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrders.Designer.cs">
+      <DependentUpon>FormOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVpered.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVpered.Designer.cs">
+      <DependentUpon>FormVpered.cs</DependentUpon>
     </Compile>
     <Compile Include="Labirint.cs">
       <SubType>Form</SubType>
@@ -80,34 +134,61 @@
       <DependentUpon>Labirint.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModelLab.Context.cs">
+    <Compile Include="ModelLabirint.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ModelLab.Context.tt</DependentUpon>
+      <DependentUpon>ModelLabirint.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="ModelLab.cs">
+    <Compile Include="ModelLabirint.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ModelLab.tt</DependentUpon>
+      <DependentUpon>ModelLabirint.tt</DependentUpon>
     </Compile>
-    <Compile Include="ModelLab.Designer.cs">
+    <Compile Include="ModelLabirint.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ModelLab.edmx</DependentUpon>
+      <DependentUpon>ModelLabirint.edmx</DependentUpon>
     </Compile>
     <Compile Include="OrdersSet.cs">
-      <DependentUpon>ModelLab.tt</DependentUpon>
+      <DependentUpon>ModelLabirint.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Users.cs">
-      <DependentUpon>ModelLab.tt</DependentUpon>
+      <DependentUpon>ModelLabirint.tt</DependentUpon>
     </Compile>
     <EmbeddedResource Include="FormAdmin.resx">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormAnime.resx">
+      <DependentUpon>FormAnime.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAuthorization.resx">
       <DependentUpon>FormAuthorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBook.resx">
+      <DependentUpon>FormBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCategories.resx">
+      <DependentUpon>FormCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClient.resx">
+      <DependentUpon>FormClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDetectiv.resx">
+      <DependentUpon>FormDetectiv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKoko.resx">
+      <DependentUpon>FormKoko.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrderBy.resx">
+      <DependentUpon>FormOrderBy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrders.resx">
+      <DependentUpon>FormOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVpered.resx">
+      <DependentUpon>FormVpered.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Labirint.resx">
       <DependentUpon>Labirint.cs</DependentUpon>
@@ -122,12 +203,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EntityDeploy Include="ModelLab.edmx">
+    <EntityDeploy Include="ModelLabirint.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ModelLab.Designer.cs</LastGenOutput>
+      <LastGenOutput>ModelLabirint.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="ModelLab.edmx.diagram">
-      <DependentUpon>ModelLab.edmx</DependentUpon>
+    <None Include="ModelLabirint.edmx.diagram">
+      <DependentUpon>ModelLabirint.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -147,17 +228,25 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ModelLab.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModelLab.edmx</DependentUpon>
-      <LastGenOutput>ModelLab.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="ModelLab.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModelLab.edmx</DependentUpon>
-      <LastGenOutput>ModelLab.cs</LastGenOutput>
-    </Content>
+    <None Include="Resources\Isida_Sui__Tokijskij_gul._Tom_1.jpeg" />
+    <None Include="Resources\Stiven_King__Chuzhak.jpeg" />
+    <None Include="Resources\Syuzan_Frensis__Vperjod.jpeg" />
+    <None Include="Resources\Andzhela_Servantes__Tajna_Koko.jpeg" />
+    <None Include="Resources\d256f0fad43e9af9e1a9cea43542adf3.jpg" />
     <None Include="Resources\logo-v1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ModelLabirint.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelLabirint.edmx</DependentUpon>
+      <LastGenOutput>ModelLabirint.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ModelLabirint.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelLabirint.edmx</DependentUpon>
+      <LastGenOutput>ModelLabirint.cs</LastGenOutput>
+    </Content>
+    <None Include="Resources\applicationexit_104351.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

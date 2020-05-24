@@ -35,6 +35,7 @@
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.buttonOK = new System.Windows.Forms.Button();
             this.Logo = new System.Windows.Forms.PictureBox();
+            this.buttonCancel = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,9 +85,9 @@
             this.buttonOK.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonOK.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonOK.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonOK.Location = new System.Drawing.Point(292, 189);
+            this.buttonOK.Location = new System.Drawing.Point(32, 194);
             this.buttonOK.Name = "buttonOK";
-            this.buttonOK.Size = new System.Drawing.Size(120, 44);
+            this.buttonOK.Size = new System.Drawing.Size(176, 44);
             this.buttonOK.TabIndex = 5;
             this.buttonOK.Text = "Войти";
             this.buttonOK.UseVisualStyleBackColor = false;
@@ -102,6 +103,20 @@
             this.Logo.TabIndex = 0;
             this.Logo.TabStop = false;
             // 
+            // buttonCancel
+            // 
+            this.buttonCancel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonCancel.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonCancel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonCancel.Location = new System.Drawing.Point(235, 194);
+            this.buttonCancel.Name = "buttonCancel";
+            this.buttonCancel.Size = new System.Drawing.Size(176, 44);
+            this.buttonCancel.TabIndex = 6;
+            this.buttonCancel.Text = "Отмена";
+            this.buttonCancel.UseVisualStyleBackColor = false;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
+            // 
             // FormAuthorization
             // 
             this.AcceptButton = this.buttonOK;
@@ -109,6 +124,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(443, 254);
+            this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonOK);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxLogin);
@@ -134,5 +150,6 @@
         private System.Windows.Forms.TextBox textBoxLogin;
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.Button buttonOK;
+        private System.Windows.Forms.Button buttonCancel;
     }
 }

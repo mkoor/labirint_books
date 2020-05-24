@@ -15,13 +15,9 @@ namespace Labirint_Project
     public partial class OrdersSet
     {
         public int Id { get; set; }
-        public int IdClient { get; set; }
-        public int IdBook { get; set; }
-        public string Date { get; set; }
-        public Nullable<int> FinalPrice { get; set; }
         public string OrderStatus { get; set; }
+        public int IdClients { get; set; }
     
-        public virtual BooksSet BooksSet { get; set; }
         public virtual ClientsSet ClientsSet { get; set; }
     }
 }

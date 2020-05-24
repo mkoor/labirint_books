@@ -63,9 +63,69 @@ namespace Labirint_Project.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Andzhela_Servantes__Tajna_Koko {
+            get {
+                object obj = ResourceManager.GetObject("Andzhela_Servantes__Tajna_Koko", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap applicationexit_104351 {
+            get {
+                object obj = ResourceManager.GetObject("applicationexit_104351", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap d256f0fad43e9af9e1a9cea43542adf3 {
+            get {
+                object obj = ResourceManager.GetObject("d256f0fad43e9af9e1a9cea43542adf3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Isida_Sui__Tokijskij_gul__Tom_1 {
+            get {
+                object obj = ResourceManager.GetObject("Isida_Sui__Tokijskij_gul._Tom_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo_v1 {
             get {
                 object obj = ResourceManager.GetObject("logo-v1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Stiven_King__Chuzhak {
+            get {
+                object obj = ResourceManager.GetObject("Stiven_King__Chuzhak", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Syuzan_Frensis__Vperjod {
+            get {
+                object obj = ResourceManager.GetObject("Syuzan_Frensis__Vperjod", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

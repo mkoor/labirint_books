@@ -17,17 +17,16 @@ namespace Labirint_Project
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public BooksSet()
         {
-            this.OrdersSet = new HashSet<OrdersSet>();
+            this.ClientsSet = new HashSet<ClientsSet>();
         }
     
         public int Id { get; set; }
         public string Name { get; set; }
         public string Author { get; set; }
-        public string Description { get; set; }
         public string StockBalance { get; set; }
         public int Price { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<OrdersSet> OrdersSet { get; set; }
+        public virtual ICollection<ClientsSet> ClientsSet { get; set; }
     }
 }

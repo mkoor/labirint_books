@@ -118,7 +118,25 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="d256f0fad43e9af9e1a9cea43542adf3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\d256f0fad43e9af9e1a9cea43542adf3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Stiven_King__Chuzhak" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Stiven_King__Chuzhak.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Isida_Sui__Tokijskij_gul._Tom_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Isida_Sui__Tokijskij_gul._Tom_1.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Syuzan_Frensis__Vperjod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Syuzan_Frensis__Vperjod.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="logo-v1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo-v1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Andzhela_Servantes__Tajna_Koko" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Andzhela_Servantes__Tajna_Koko.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="applicationexit_104351" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\applicationexit_104351.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

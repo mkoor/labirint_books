@@ -34,6 +34,7 @@
             this.buttonClient = new System.Windows.Forms.Button();
             this.buttonOrder = new System.Windows.Forms.Button();
             this.labelHello = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,12 +54,13 @@
             this.buttonBook.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonBook.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonBook.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonBook.Location = new System.Drawing.Point(48, 130);
+            this.buttonBook.Location = new System.Drawing.Point(51, 130);
             this.buttonBook.Name = "buttonBook";
             this.buttonBook.Size = new System.Drawing.Size(256, 54);
             this.buttonBook.TabIndex = 6;
             this.buttonBook.Text = "Данные о книгах";
             this.buttonBook.UseVisualStyleBackColor = false;
+            this.buttonBook.Click += new System.EventHandler(this.buttonBook_Click);
             // 
             // buttonClient
             // 
@@ -66,12 +68,13 @@
             this.buttonClient.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonClient.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonClient.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonClient.Location = new System.Drawing.Point(48, 203);
+            this.buttonClient.Location = new System.Drawing.Point(51, 203);
             this.buttonClient.Name = "buttonClient";
             this.buttonClient.Size = new System.Drawing.Size(256, 54);
             this.buttonClient.TabIndex = 7;
             this.buttonClient.Text = "Данные о клиентах";
             this.buttonClient.UseVisualStyleBackColor = false;
+            this.buttonClient.Click += new System.EventHandler(this.buttonClient_Click);
             // 
             // buttonOrder
             // 
@@ -79,12 +82,13 @@
             this.buttonOrder.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonOrder.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonOrder.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonOrder.Location = new System.Drawing.Point(48, 276);
+            this.buttonOrder.Location = new System.Drawing.Point(51, 276);
             this.buttonOrder.Name = "buttonOrder";
             this.buttonOrder.Size = new System.Drawing.Size(256, 54);
             this.buttonOrder.TabIndex = 8;
             this.buttonOrder.Text = "Данные о заказах";
             this.buttonOrder.UseVisualStyleBackColor = false;
+            this.buttonOrder.Click += new System.EventHandler(this.buttonOrder_Click);
             // 
             // labelHello
             // 
@@ -97,12 +101,27 @@
             this.labelHello.TabIndex = 9;
             this.labelHello.Text = "Здравствуйте, ";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Location = new System.Drawing.Point(116, 349);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(102, 35);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Выйти";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(355, 352);
+            this.ClientSize = new System.Drawing.Size(355, 396);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.labelHello);
             this.Controls.Add(this.buttonOrder);
             this.Controls.Add(this.buttonClient);
@@ -127,5 +146,6 @@
         private System.Windows.Forms.Button buttonClient;
         private System.Windows.Forms.Button buttonOrder;
         private System.Windows.Forms.Label labelHello;
+        private System.Windows.Forms.Button button1;
     }
 }

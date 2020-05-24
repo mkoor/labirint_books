@@ -14,7 +14,7 @@ namespace Labirint_Project
 
     static class Program
     {
-        public static LabirintEntities lab = new LabirintEntities();
+        public static LabirintEntities1 lab = new LabirintEntities1();
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
