@@ -48,7 +48,7 @@
             // comboBoxOrder
             // 
             this.comboBoxOrder.FormattingEnabled = true;
-            this.comboBoxOrder.Location = new System.Drawing.Point(26, 136);
+            this.comboBoxOrder.Location = new System.Drawing.Point(26, 94);
             this.comboBoxOrder.Name = "comboBoxOrder";
             this.comboBoxOrder.Size = new System.Drawing.Size(191, 23);
             this.comboBoxOrder.TabIndex = 62;
@@ -59,7 +59,7 @@
             this.labelOrder.BackColor = System.Drawing.Color.Black;
             this.labelOrder.Font = new System.Drawing.Font("Open Sans Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelOrder.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelOrder.Location = new System.Drawing.Point(22, 111);
+            this.labelOrder.Location = new System.Drawing.Point(22, 69);
             this.labelOrder.Name = "labelOrder";
             this.labelOrder.Size = new System.Drawing.Size(136, 22);
             this.labelOrder.TabIndex = 61;
@@ -71,7 +71,7 @@
             this.labelStatusOrder.BackColor = System.Drawing.Color.Black;
             this.labelStatusOrder.Font = new System.Drawing.Font("Open Sans Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelStatusOrder.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelStatusOrder.Location = new System.Drawing.Point(22, 162);
+            this.labelStatusOrder.Location = new System.Drawing.Point(22, 120);
             this.labelStatusOrder.Name = "labelStatusOrder";
             this.labelStatusOrder.Size = new System.Drawing.Size(118, 22);
             this.labelStatusOrder.TabIndex = 63;
@@ -163,7 +163,7 @@
             // 
             this.Logo.BackColor = System.Drawing.Color.White;
             this.Logo.Image = global::Labirint_Project.Properties.Resources.logo_v1;
-            this.Logo.Location = new System.Drawing.Point(12, 34);
+            this.Logo.Location = new System.Drawing.Point(12, 12);
             this.Logo.Name = "Logo";
             this.Logo.Size = new System.Drawing.Size(227, 45);
             this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -180,7 +180,7 @@
             "Ожидает отправки",
             "Доставляется",
             "Доставлено"});
-            this.comboBoxStatus.Location = new System.Drawing.Point(26, 187);
+            this.comboBoxStatus.Location = new System.Drawing.Point(26, 145);
             this.comboBoxStatus.Name = "comboBoxStatus";
             this.comboBoxStatus.Size = new System.Drawing.Size(191, 23);
             this.comboBoxStatus.TabIndex = 70;

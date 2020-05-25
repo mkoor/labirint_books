@@ -108,7 +108,9 @@ namespace Labirint_Project
                 OrdersSet ordersSet = listViewOrders.SelectedItems[0].Tag as OrdersSet;
 
                 comboBoxStatus.Text = ordersSet.OrderStatus;
-                comboBoxOrder.Text = ordersSet.IdClients.ToString();
+                comboBoxOrder.Text = ordersSet.IdClients.ToString()+". "+
+                ordersSet.ClientsSet.LastName+" "+ordersSet.ClientsSet.FirstName+" - "+
+                ordersSet.ClientsSet.IdBooks.ToString()+". "+ordersSet.ClientsSet.BooksSet.Name;
             }
             else
             {

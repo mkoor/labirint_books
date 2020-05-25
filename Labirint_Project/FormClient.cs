@@ -24,7 +24,8 @@ namespace Labirint_Project
             comboBoxBook.Items.Clear();
             foreach (BooksSet booksSet in Program.lab.BooksSet)
             {
-                string[] item = { booksSet.Id.ToString() + ". ", booksSet.Name };
+                string[] item = { booksSet.Id.ToString()+". ", booksSet.Name+
+                        " - ", booksSet.Author};
                 comboBoxBook.Items.Add(string.Join(" ", item));
             }
         }
@@ -36,7 +37,7 @@ namespace Labirint_Project
             {
                 ListViewItem item = new ListViewItem (new string[]
                 {
-                    clientsSet.Id.ToString(), clientsSet.LastName+" "+clientsSet.FirstName,
+                    clientsSet.Id.ToString()+".", clientsSet.LastName+" "+clientsSet.FirstName,
                     clientsSet.Phone, clientsSet.Email, clientsSet.Address, clientsSet.BooksSet.Name
                     +" - "+clientsSet.BooksSet.Author
                 });
@@ -97,7 +98,8 @@ namespace Labirint_Project
                 textBoxPhone.Text = clientsSet.Phone;
                 textBoxEmail.Text = clientsSet.Email;
                 textBoxAddress.Text = clientsSet.Address;
-                comboBoxBook.Text = clientsSet.IdBooks.ToString();
+                comboBoxBook.Text = clientsSet.IdBooks.ToString()
+                +"."+clientsSet.BooksSet.Name+" - "+clientsSet.BooksSet.Author;
             }
             else
             {
