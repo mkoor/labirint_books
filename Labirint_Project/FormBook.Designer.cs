@@ -65,7 +65,7 @@
             this.listViewBooks.Location = new System.Drawing.Point(210, 12);
             this.listViewBooks.MultiSelect = false;
             this.listViewBooks.Name = "listViewBooks";
-            this.listViewBooks.Size = new System.Drawing.Size(488, 188);
+            this.listViewBooks.Size = new System.Drawing.Size(596, 188);
             this.listViewBooks.TabIndex = 23;
             this.listViewBooks.UseCompatibleStateImageBehavior = false;
             this.listViewBooks.View = System.Windows.Forms.View.Details;
@@ -74,12 +74,12 @@
             // IdBooks
             // 
             this.IdBooks.Text = "Id";
-            this.IdBooks.Width = 128;
+            this.IdBooks.Width = 40;
             // 
             // NameBook
             // 
             this.NameBook.Text = "Название";
-            this.NameBook.Width = 104;
+            this.NameBook.Width = 132;
             // 
             // Author
             // 
@@ -89,7 +89,7 @@
             // StockBalance
             // 
             this.StockBalance.Text = "Остаток на складе";
-            this.StockBalance.Width = 73;
+            this.StockBalance.Width = 131;
             // 
             // Price
             // 
@@ -102,9 +102,9 @@
             this.buttonAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonAdd.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonAdd.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonAdd.Location = new System.Drawing.Point(212, 215);
+            this.buttonAdd.Location = new System.Drawing.Point(210, 211);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(134, 41);
+            this.buttonAdd.Size = new System.Drawing.Size(176, 47);
             this.buttonAdd.TabIndex = 30;
             this.buttonAdd.Text = "Создать";
             this.buttonAdd.UseVisualStyleBackColor = false;
@@ -116,9 +116,9 @@
             this.buttonEdit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonEdit.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonEdit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonEdit.Location = new System.Drawing.Point(391, 215);
+            this.buttonEdit.Location = new System.Drawing.Point(422, 211);
             this.buttonEdit.Name = "buttonEdit";
-            this.buttonEdit.Size = new System.Drawing.Size(134, 41);
+            this.buttonEdit.Size = new System.Drawing.Size(176, 47);
             this.buttonEdit.TabIndex = 31;
             this.buttonEdit.Text = "Изменить";
             this.buttonEdit.UseVisualStyleBackColor = false;
@@ -130,9 +130,9 @@
             this.buttonDel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonDel.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonDel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonDel.Location = new System.Drawing.Point(566, 215);
+            this.buttonDel.Location = new System.Drawing.Point(630, 211);
             this.buttonDel.Name = "buttonDel";
-            this.buttonDel.Size = new System.Drawing.Size(134, 41);
+            this.buttonDel.Size = new System.Drawing.Size(176, 47);
             this.buttonDel.TabIndex = 32;
             this.buttonDel.Text = "Удалить";
             this.buttonDel.UseVisualStyleBackColor = false;
@@ -236,7 +236,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(726, 268);
+            this.ClientSize = new System.Drawing.Size(841, 271);
             this.Controls.Add(this.Logo);
             this.Controls.Add(this.buttonDel);
             this.Controls.Add(this.buttonEdit);

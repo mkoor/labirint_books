@@ -23,7 +23,7 @@ namespace Labirint_Project
             comboBoxBook.Items.Clear();
             foreach (BooksSet booksSet in Program.lab.BooksSet)
             {
-                string[] item = { booksSet.Id.ToString() + ". ", booksSet.Name };
+                string[] item = { booksSet.Id.ToString() + ". ", booksSet.Name+ " - ", booksSet.Author};
                 comboBoxBook.Items.Add(string.Join(" ", item));
             }
         }

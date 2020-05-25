@@ -233,7 +233,7 @@
             this.labelDelivery.BackColor = System.Drawing.Color.LightGray;
             this.labelDelivery.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelDelivery.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelDelivery.Location = new System.Drawing.Point(124, 429);
+            this.labelDelivery.Location = new System.Drawing.Point(124, 426);
             this.labelDelivery.Name = "labelDelivery";
             this.labelDelivery.Size = new System.Drawing.Size(192, 26);
             this.labelDelivery.TabIndex = 27;
@@ -243,7 +243,7 @@
             // 
             this.checkBoxDelivery.AutoSize = true;
             this.checkBoxDelivery.Font = new System.Drawing.Font("Open Sans Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxDelivery.Location = new System.Drawing.Point(322, 421);
+            this.checkBoxDelivery.Location = new System.Drawing.Point(322, 418);
             this.checkBoxDelivery.Name = "checkBoxDelivery";
             this.checkBoxDelivery.Size = new System.Drawing.Size(101, 19);
             this.checkBoxDelivery.TabIndex = 28;
@@ -297,7 +297,7 @@
             // 
             this.checkBoxDelivery1.AutoSize = true;
             this.checkBoxDelivery1.Font = new System.Drawing.Font("Open Sans Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxDelivery1.Location = new System.Drawing.Point(322, 446);
+            this.checkBoxDelivery1.Location = new System.Drawing.Point(322, 443);
             this.checkBoxDelivery1.Name = "checkBoxDelivery1";
             this.checkBoxDelivery1.Size = new System.Drawing.Size(66, 19);
             this.checkBoxDelivery1.TabIndex = 34;
@@ -309,7 +309,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(722, 483);
+            this.ClientSize = new System.Drawing.Size(722, 495);
             this.Controls.Add(this.checkBoxDelivery1);
             this.Controls.Add(this.Logo);
             this.Controls.Add(this.pictureBox2);

@@ -48,7 +48,7 @@
             // comboBoxOrder
             // 
             this.comboBoxOrder.FormattingEnabled = true;
-            this.comboBoxOrder.Location = new System.Drawing.Point(26, 94);
+            this.comboBoxOrder.Location = new System.Drawing.Point(271, 34);
             this.comboBoxOrder.Name = "comboBoxOrder";
             this.comboBoxOrder.Size = new System.Drawing.Size(191, 23);
             this.comboBoxOrder.TabIndex = 62;
@@ -59,7 +59,7 @@
             this.labelOrder.BackColor = System.Drawing.Color.Black;
             this.labelOrder.Font = new System.Drawing.Font("Open Sans Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelOrder.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelOrder.Location = new System.Drawing.Point(22, 69);
+            this.labelOrder.Location = new System.Drawing.Point(267, 9);
             this.labelOrder.Name = "labelOrder";
             this.labelOrder.Size = new System.Drawing.Size(136, 22);
             this.labelOrder.TabIndex = 61;
@@ -71,7 +71,7 @@
             this.labelStatusOrder.BackColor = System.Drawing.Color.Black;
             this.labelStatusOrder.Font = new System.Drawing.Font("Open Sans Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelStatusOrder.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelStatusOrder.Location = new System.Drawing.Point(22, 120);
+            this.labelStatusOrder.Location = new System.Drawing.Point(493, 9);
             this.labelStatusOrder.Name = "labelStatusOrder";
             this.labelStatusOrder.Size = new System.Drawing.Size(118, 22);
             this.labelStatusOrder.TabIndex = 63;
@@ -88,10 +88,10 @@
             this.listViewOrders.FullRowSelect = true;
             this.listViewOrders.GridLines = true;
             this.listViewOrders.HideSelection = false;
-            this.listViewOrders.Location = new System.Drawing.Point(259, 15);
+            this.listViewOrders.Location = new System.Drawing.Point(19, 69);
             this.listViewOrders.MultiSelect = false;
             this.listViewOrders.Name = "listViewOrders";
-            this.listViewOrders.Size = new System.Drawing.Size(507, 164);
+            this.listViewOrders.Size = new System.Drawing.Size(680, 164);
             this.listViewOrders.TabIndex = 65;
             this.listViewOrders.UseCompatibleStateImageBehavior = false;
             this.listViewOrders.View = System.Windows.Forms.View.Details;
@@ -105,12 +105,12 @@
             // NameBook
             // 
             this.NameBook.Text = "Книга";
-            this.NameBook.Width = 104;
+            this.NameBook.Width = 174;
             // 
             // Client
             // 
             this.Client.Text = "ФИ клиента";
-            this.Client.Width = 102;
+            this.Client.Width = 209;
             // 
             // StatusOrder
             // 
@@ -123,9 +123,9 @@
             this.buttonDel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonDel.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonDel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonDel.Location = new System.Drawing.Point(632, 190);
+            this.buttonDel.Location = new System.Drawing.Point(523, 249);
             this.buttonDel.Name = "buttonDel";
-            this.buttonDel.Size = new System.Drawing.Size(134, 41);
+            this.buttonDel.Size = new System.Drawing.Size(176, 47);
             this.buttonDel.TabIndex = 68;
             this.buttonDel.Text = "Удалить";
             this.buttonDel.UseVisualStyleBackColor = false;
@@ -137,9 +137,9 @@
             this.buttonEdit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonEdit.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonEdit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonEdit.Location = new System.Drawing.Point(445, 190);
+            this.buttonEdit.Location = new System.Drawing.Point(271, 249);
             this.buttonEdit.Name = "buttonEdit";
-            this.buttonEdit.Size = new System.Drawing.Size(134, 41);
+            this.buttonEdit.Size = new System.Drawing.Size(176, 47);
             this.buttonEdit.TabIndex = 67;
             this.buttonEdit.Text = "Изменить";
             this.buttonEdit.UseVisualStyleBackColor = false;
@@ -151,9 +151,9 @@
             this.buttonAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonAdd.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonAdd.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonAdd.Location = new System.Drawing.Point(259, 190);
+            this.buttonAdd.Location = new System.Drawing.Point(19, 248);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(134, 41);
+            this.buttonAdd.Size = new System.Drawing.Size(176, 47);
             this.buttonAdd.TabIndex = 66;
             this.buttonAdd.Text = "Создать";
             this.buttonAdd.UseVisualStyleBackColor = false;
@@ -180,7 +180,7 @@
             "Ожидает отправки",
             "Доставляется",
             "Доставлено"});
-            this.comboBoxStatus.Location = new System.Drawing.Point(26, 145);
+            this.comboBoxStatus.Location = new System.Drawing.Point(497, 34);
             this.comboBoxStatus.Name = "comboBoxStatus";
             this.comboBoxStatus.Size = new System.Drawing.Size(191, 23);
             this.comboBoxStatus.TabIndex = 70;
@@ -190,7 +190,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(791, 248);
+            this.ClientSize = new System.Drawing.Size(719, 314);
             this.Controls.Add(this.comboBoxStatus);
             this.Controls.Add(this.Logo);
             this.Controls.Add(this.buttonDel);

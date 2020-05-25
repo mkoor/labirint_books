@@ -82,9 +82,10 @@
             this.labelWelcome.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.labelWelcome.Location = new System.Drawing.Point(24, 91);
             this.labelWelcome.Name = "labelWelcome";
-            this.labelWelcome.Size = new System.Drawing.Size(529, 22);
+            this.labelWelcome.Size = new System.Drawing.Size(524, 22);
             this.labelWelcome.TabIndex = 3;
-            this.labelWelcome.Text = "Добро пожаловать в информационную систему \"Лабиринт\"!";
+            this.labelWelcome.Text = "Добро пожаловать в информационную систему \"Лабиринт\"";
+            this.labelWelcome.Click += new System.EventHandler(this.labelWelcome_Click);
             // 
             // label1
             // 
