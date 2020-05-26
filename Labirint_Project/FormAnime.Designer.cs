@@ -71,11 +71,11 @@
             this.label4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label4.Font = new System.Drawing.Font("Open Sans", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label4.Location = new System.Drawing.Point(865, 6);
+            this.label4.Location = new System.Drawing.Point(861, 6);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 43);
+            this.label4.Size = new System.Drawing.Size(73, 43);
             this.label4.TabIndex = 33;
-            this.label4.Text = "0+";
+            this.label4.Text = "18+";
             // 
             // button1
             // 

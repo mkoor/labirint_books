@@ -64,7 +64,7 @@ namespace Labirint_Project
                     clientsSet.Phone = textBoxPhone.Text;
                     clientsSet.Address = textBoxAddress.Text;
                 }
-                MessageBox.Show("Ваш заказ успешно офоромлен! Ожидайте SMS сообщение по вашему номеру телефона с" +
+                MessageBox.Show("Ваш заказ успешно оформлен! Ожидайте SMS сообщение по вашему номеру телефона с" +
                     " информацией об оплате и доставке вашей книги.","Заказ оформлен",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();

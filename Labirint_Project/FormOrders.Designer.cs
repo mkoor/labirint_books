@@ -61,9 +61,9 @@
             this.labelOrder.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.labelOrder.Location = new System.Drawing.Point(267, 9);
             this.labelOrder.Name = "labelOrder";
-            this.labelOrder.Size = new System.Drawing.Size(136, 22);
+            this.labelOrder.Size = new System.Drawing.Size(68, 22);
             this.labelOrder.TabIndex = 61;
-            this.labelOrder.Text = "Книга - клиент*";
+            this.labelOrder.Text = " Заказ*";
             // 
             // labelStatusOrder
             // 
