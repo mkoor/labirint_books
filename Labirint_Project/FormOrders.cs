@@ -139,5 +139,10 @@ namespace Labirint_Project
                 MessageBox.Show("Невозможно удалить, эта запись используется!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error); ;
             }
         }
+
+        private void comboBoxOrder_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

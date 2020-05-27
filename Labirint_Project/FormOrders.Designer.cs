@@ -52,6 +52,7 @@
             this.comboBoxOrder.Name = "comboBoxOrder";
             this.comboBoxOrder.Size = new System.Drawing.Size(191, 23);
             this.comboBoxOrder.TabIndex = 62;
+            this.comboBoxOrder.SelectedIndexChanged += new System.EventHandler(this.comboBoxOrder_SelectedIndexChanged);
             // 
             // labelOrder
             // 
